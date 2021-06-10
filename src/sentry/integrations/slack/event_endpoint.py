@@ -8,7 +8,8 @@ from sentry.web.decorators import transaction_start
 
 from .client import SlackClient
 from .message_builder.event import SlackEventMessageBuilder
-from .requests import SlackEventRequest, SlackRequestError
+from .requests.errors import SlackRequestError
+from .requests.event import SlackEventRequest
 from .unfurl import LinkType, UnfurlableUrl, link_handlers, match_link
 from .utils import logger, parse_link
 

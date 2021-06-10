@@ -9,7 +9,8 @@ from sentry.web.decorators import transaction_start
 
 from .client import SlackClient
 from .link_identity import build_linking_url
-from .requests import SlackActionRequest, SlackRequestError
+from .requests.action import SlackActionRequest
+from .requests.errors import SlackRequestError
 from .unlink_identity import build_unlinking_url
 from .utils import logger
 
